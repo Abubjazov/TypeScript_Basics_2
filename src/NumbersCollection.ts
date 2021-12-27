@@ -8,7 +8,7 @@ export class NumbersCollection implements Sortable {
     }
 
     compare(leftIdx: number, rightIdx: number): boolean {
-        return this.data[leftIdx] > this.data[rightIdx]        
+        return this.data[leftIdx] > this.data[rightIdx]
     }
 
     swap(leftIdx: number, rightIdx: number): void {

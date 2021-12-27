@@ -16,7 +16,7 @@ export class Sorter {
                 if (this.collection.compare(j, j + 1)) {
                     this.collection.swap(j, j + 1)
                 }
-            }   
+            }
         }
     }
 }
