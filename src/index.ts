@@ -1,3 +1,4 @@
+import { CharacterCollection } from "./CharacterCollection"
 import { NumbersCollection } from "./NumbersCollection"
 import { Sorter } from "./Sorter"
 
@@ -7,7 +8,8 @@ const sorter = new Sorter(numbersCollection)
 sorter.sort()
 console.log(numbersCollection.data)
 
-// const sorterStr = new Sorter('ZbacX')
+const characterCollection = new CharacterCollection('ZbacX')
+const sorterStr = new Sorter(characterCollection)
 
-// sorterStr.sort()
-// console.log(sorterStr.collection)
+sorterStr.sort()
+console.log(characterCollection.data)
