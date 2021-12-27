@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {    
+  "scripts": {
     "dev:build": "tsc -w",
     "dev:run": "nodemon build/index.js",
     "dev": "concurrently npm:dev:*"

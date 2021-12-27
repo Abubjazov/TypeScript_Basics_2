@@ -1,6 +1,6 @@
 # dependencies
 package-lock.json
-/node_modules
+node_modules
 
 # misc
 .env
@@ -13,4 +13,4 @@ package-lock.json
 npm-debug.log*
 
 # other
-/build
+build
