@@ -1,4 +1,5 @@
 import { CharacterCollection } from "./CharacterCollection"
+import { LinkedList } from './LinkedList'
 import { NumbersCollection } from "./NumbersCollection"
 import { Sorter } from "./Sorter"
 
@@ -13,3 +14,17 @@ const sorterStr = new Sorter(characterCollection)
 
 sorterStr.sort()
 console.log(characterCollection.data)
+
+let linkedList = new LinkedList()
+
+linkedList.add(13)
+linkedList.add(1)
+linkedList.add(7)
+linkedList.add(15)
+linkedList.add(-5)
+linkedList.print()
+
+const sorterLL = new Sorter(linkedList)
+sorterLL.sort()
+
+linkedList.print()
