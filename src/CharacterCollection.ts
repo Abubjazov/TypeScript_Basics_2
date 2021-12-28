@@ -16,7 +16,7 @@ export class CharacterCollection implements Sortable {
     }
 
     compare(leftIdx: number, rightIdx: number): boolean {
-        return this.dataArr[leftIdx] > this.dataArr[rightIdx]
+        return this.dataArr[leftIdx].toLowerCase() > this.dataArr[rightIdx].toLowerCase()
     }
 
     swap(leftIdx: number, rightIdx: number): void {
