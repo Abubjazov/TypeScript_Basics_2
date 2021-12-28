@@ -1,4 +1,4 @@
-import { Sortable } from './Sorter'
+import { Sortable, Sorter } from './Sorter'
 
 class Node {
     next: Node | null = null
@@ -6,7 +6,7 @@ class Node {
     constructor(public data: number) {}
 }
 
-export class LinkedList implements Sortable {
+export class LinkedList extends Sorter implements Sortable {
     head: Node | null = null
 
     get length(): number {
@@ -72,14 +72,17 @@ export class LinkedList implements Sortable {
         rightNode.data = tmp
     }
 
-    print(): void {
-        if (!this.head) return
+    get data(): string {
+        if (!this.head) return ''
 
         let node: Node | null = this.head
+        let resultArr = []
 
         while (node) {
-            console.log(node.data)
+            resultArr.push(node.data)
             node = node.next
         }
+
+        return resultArr.join(', ')
     }
 }
